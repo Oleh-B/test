@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form Validation</h1>
+    <section class="form-section">
+        <form class="form" action="submitted.html" onsubmit="return formValidation(this)">
+            <ul>
+                <li><input 
+                    class="input" 
+                    type="email" 
+                    name="emailInput" 
+                    placeholder="sophie@gmail.com">
+                    <div id="emailId"></div>
+                </li>
+                <li><input 
+                    oninput="checkForDifficult()"
+                    id="nicePass"
+                    class="input" 
+                    type="password" 
+                    name="passwordInput" 
+                    placeholder="type your password here">
+                    <div id="passId"></div>
+                </li>
+                <li><input 
+                    id="nicePass2"
+                    class="input" 
+                    type="password" 
+                    name="passwordConfirmInput" 
+                    placeholder="confirm your password">
+                    <div id="passConfId"></div>
+                </li>
+                <li><input 
+                    class="btn-submit" 
+                    type="submit" 
+                    name="submit"></li>
+            </ul>
+        </form>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
